@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather forecast</h1>
+      <div class="search-container" id="search-container">
+        <label class="sc-element" for="location">Location:</label>
+        <input class="sc-element" required type="text" id="location" name="location" placeholder="eg. City or town" />
+        <input class="submit sc-element" type="submit" value="Submit" id="search" />
+      </div>
+      <div class="search-container" id="search-container-results">
+        <span class="sc-element">Units: </span>
+
+        <input checked type="radio" value="metric" id="metric" name="units" />
+        <label for="metric">Metric</label>
+
+        <input type="radio" value="imperial" id="imperial" name="units" />
+        <label for="imperial">Imperial</label>
+      </div>
+      <div class="geocode-results" id="geocode-results"></div>
+      <div class="forecast-results" id="forecast-results"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
